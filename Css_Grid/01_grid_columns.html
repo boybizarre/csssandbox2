@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+  <style>
+    .grid {
+      display: grid;
+      /* grid-template-columns: 200px auto 200px; */
+      /* grid-template-columns: auto auto auto; */
+      /* grid-template-columns: repeat(3, auto); */
+      /* grid-template-columns: 1fr 2fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 3rem;
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    <div class="item">Item4</div>
+    <div class="item">Item5</div>
+    <div class="item">Item6</div>
+  </div>
+
+
+  <main>
+    <section>
+      <h3>Welcome To My Site</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos in vel veritatis, ipsa adipisci fuga, quos doloremque ex saepe, sed porro dicta quisquam eaque? Dolore soluta quasi voluptatum culpa voluptas.</p>
+    </section>
+
+    <aside>
+      <h3>Side Menu</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis aliquam minima hic similique quo, repellendus repellat odit in illo debitis consectetur rem nostrum, odio commodi ipsum, reiciendis sint veniam? Quam animi corporis dolore corrupti aspernatur rem repudiandae natus expedita similique error. Earum iste placeat error ipsum illo. Totam hic voluptate rem, expedita natus nobis ducimus. Aliquam non, veritatis quae ipsa, quia dolore ad explicabo fugit eum inventore facilis nemo quasi delectus! At quo, perferendis dolore asperiores excepturi, alias dolor laboriosam exercitationem expedita rerum nobis aliquid iure vel id consectetur maiores voluptatem ipsam culpa vero, natus fugit autem illum ratione.</p>
+    </aside>
+  </main>
+</body>
+
+</html>
